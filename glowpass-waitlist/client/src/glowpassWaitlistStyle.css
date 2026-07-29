@@ -7,14 +7,17 @@
 
   /* Brand Colours */
 
-  --ivory: #fffaf6;
-  --soft-ivory: #fdf5f1;
-
-  --blush: #f4dfe4;
+/*Main Background*/
+  --white: #fdfdfd;
+  /*Lower Background*/
+  --soft-ivory: #ffd3F7;
+/*frame*/
+  --blush: #ffd3F7;
+  /*lower button*/
   --light-blush: #faedf0;
-
-  --rose: #b65f78;
-  --deep-rose: #94475f;
+/*Headings and others*/
+  --rose: #9E1F63;
+  --deep-rose: #853f55;
 
   --espresso: #352825;
   --soft-espresso: #5e4d48;
