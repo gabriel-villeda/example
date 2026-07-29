@@ -1,13 +1,367 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>client</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="Join the Glowpass waitlist for curated beauty and wellness experiences across Vancouver."
+  />
+
+  <title>Glowpass | Vancouver Beauty & Wellness</title>
+
+  <link rel="stylesheet" href="./src/glowpassWaitlistStyle.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+
+      <a href="#" class="logo" aria-label="Glowpass home">
+        glowpass
+      </a>
+
+      <a href="#waitlist" class="nav-cta">
+        Join the waitlist
+      </a>
+
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <p class="eyebrow">
+          Coming soon to Vancouver
+        </p>
+
+        <h1>
+          Your beauty routine,
+          <span>one pass away.</span>
+        </h1>
+
+        <p class="hero-description">
+          Glowpass is a curated beauty and wellness membership
+          connecting you with trusted local salons, studios and
+          self-care experiences across Vancouver.
+        </p>
+
+        <a href="#waitlist" class="primary-button">
+          Get early access
+        </a>
+
+        <p class="launch-note">
+          Launching first in select Vancouver neighbourhoods.
+        </p>
+
+      </div>
+
+
+      <!-- Decorative visual side -->
+
+      <div class="hero-visual">
+
+        <div class="visual-card visual-card-one">
+          <span class="visual-icon">✦</span>
+
+          <p class="small-label">
+            Your monthly ritual
+          </p>
+
+          <h2>
+            Beauty that fits your life.
+          </h2>
+
+          <div class="service-tags">
+            <span>Facials</span>
+            <span>Nails</span>
+            <span>Hair</span>
+            <span>Massage</span>
+            <span>Wellness</span>
+          </div>
+        </div>
+
+        <div class="floating-badge">
+          <span>♡</span>
+          Curated in Vancouver
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         VALUE PROPOSITION
+    ========================== -->
+
+    <section class="value-section">
+
+      <div class="section-intro">
+        <p class="eyebrow">Self-care, simplified</p>
+
+        <h2>
+          More ways to glow.
+          Less effort finding them.
+        </h2>
+      </div>
+
+
+      <div class="benefit-grid">
+
+        <article class="benefit">
+          <span class="benefit-number">01</span>
+
+          <h3>Curated</h3>
+
+          <p>
+            Discover beauty and wellness businesses selected
+            for quality, experience and service.
+          </p>
+        </article>
+
+
+        <article class="benefit">
+          <span class="benefit-number">02</span>
+
+          <h3>Flexible</h3>
+
+          <p>
+            Explore different treatments and build a self-care
+            routine around what you actually want.
+          </p>
+        </article>
+
+
+        <article class="benefit">
+          <span class="benefit-number">03</span>
+
+          <h3>Local</h3>
+
+          <p>
+            Glowpass is being built around trusted independent
+            beauty and wellness businesses in Vancouver.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         WAITLIST
+    ========================== -->
+
+    <section class="waitlist-section" id="waitlist">
+
+      <div class="waitlist-container">
+
+        <div class="waitlist-copy">
+
+          <p class="eyebrow">
+            Be first to glow
+          </p>
+
+          <h2>
+            Get early access to Glowpass.
+          </h2>
+
+          <p>
+            Join the founding waitlist and be among the first
+            to hear about launch access, participating businesses
+            and early member perks.
+          </p>
+
+        </div>
+
+
+        <!-- =========================
+             WAITLIST FORM
+        ========================== -->
+
+        <form id="waitlist-form" class="waitlist-form">
+
+          <div class="form-row">
+
+            <div class="form-group">
+              <label for="firstName">
+                First name
+              </label>
+
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                autocomplete="given-name"
+                required
+              />
+            </div>
+
+
+            <div class="form-group">
+              <label for="lastName">
+                Last name
+              </label>
+
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                autocomplete="family-name"
+                required
+              />
+            </div>
+
+          </div>
+
+
+          <div class="form-group">
+            <label for="email">
+              Email address
+            </label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="your@email.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+
+          <div class="form-group">
+            <label for="neighborhood">
+              Where would you use Glowpass most?
+            </label>
+
+            <select
+              id="neighborhood"
+              name="neighborhood"
+              required
+            >
+
+              <option value="" disabled selected>
+                Select your neighbourhood
+              </option>
+
+              <option value="kitsilano">
+                Kitsilano
+              </option>
+
+              <option value="yaletown">
+                Yaletown
+              </option>
+
+              <option value="mount-pleasant">
+                Mount Pleasant
+              </option>
+
+              <option value="north-vancouver">
+                North Vancouver
+              </option>
+
+            </select>
+          </div>
+
+          <div class="consent-option">
+  <input
+    type="checkbox"
+    id="marketingConsent"
+    name="marketingConsent"
+    value="true"
+  />
+
+  <label for="marketingConsent">
+    Send me Glowpass launch updates. Unsubscribe 
+  </label>
+</div>
+
+          <button type="submit" class="submit-button">
+            Join the waitlist
+            <span aria-hidden="true">→</span>
+          </button>
+
+
+          <!-- Your JavaScript can update this after submission -->
+          <p
+            id="form-message"
+            class="form-message"
+            aria-live="polite"
+          ></p>
+
+        </form>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         LOCATION
+    ========================== -->
+
+    <section class="location-section">
+
+      <p class="eyebrow">
+        Starting local
+      </p>
+
+      <h2>
+        Made for Vancouver's beauty routine.
+      </h2>
+
+      <div class="location-list">
+        <span>Kitsilano</span>
+        <span>Yaletown</span>
+        <span>Mount Pleasant</span>
+        <span>North Vancouver</span>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer class="site-footer">
+
+    <a href="#" class="footer-logo">
+      glowpass
+    </a>
+
+    <p>
+      Beauty. Wellness. Your way.
+    </p>
+
+    <p class="copyright">
+      © 2026 Glowpass
+    </p>
+
+  </footer>
+
+
+  <!-- Keep your existing JS file here if you have one -->
+  <script type="module" src="/src/main.js"></script>
+
+</body>
 </html>
