@@ -26,14 +26,12 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: 'npm'
-          cache-dependency-path: 'glowpass-waitlist/client/package-lock.json'
+          node-version: 22
 
       - name: Install dependencies & Build
         run: |
           cd glowpass-waitlist/client
-          npm ci
+          npm install
           npm run build
 
       - name: Setup Pages
